@@ -65,6 +65,10 @@ mongoose.set('debug', true);
 require('./models/Users');
 require('./models/Schools');
 require('./models/PrePrimarySchools');
+require('./models/PrimarySchools');
+require('./models/MiddleSchools');
+require('./models/SecondarySchools');
+require('./models/SeniorSecondarySchools');
 require('./config/passport');   
 app.use(require('./routes'));
 
