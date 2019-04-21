@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 var PrimarySchools = require(`${__base}/models/PrimarySchools`);
 
 exports.createPrimarySchool = (req, res, next)=>{
+
+    console.log('ENTERED!!!');
    
     const { body: {primarySchools} } = req;
 

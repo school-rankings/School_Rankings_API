@@ -121,6 +121,8 @@ exports.searchSchool = (req, res, next) => {
 exports.getGeoLocSchools = (req, res) => {
   geocoder.geocode(req.params.term).then(data => {
 
+    console.log('Data: ',data[0]);
+
     var options = {
       url: 'http://localhost:8000/api/v1/schools/search/' + data[0].county,
       method: 'GET',
